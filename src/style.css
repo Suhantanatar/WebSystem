@@ -1,0 +1,34 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  width: 100%;
+  height: 100vh;
+}
+
+.ol-overlay-container {
+  background-color: white;
+  padding: 0.25em 0.5em;
+  border-radius: 8px;
+  margin-top: -1.2rem;
+  position: relative;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+}
+
+.ol-overlay-container::before {
+  content: "";
+  border-style: solid;
+  position: absolute;
+  border-width: 0.8em 0.5em 0 0.5em;
+  border-color: white transparent transparent transparent;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
